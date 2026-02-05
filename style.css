@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #fbf9f8;
+  background-color: #362104;
+  line-height: 1.6;
+ 
+}
+
+/* ===== Header ===== */
+.header {
+  background: url('image/coffee_image\(1\).png') center/cover no-repeat;
+  color: white;
+  padding: 80px 20%;
+  text-align: center;
+}
+.headers {
+  color: white;
+  padding: 10px 10%;
+  text-align: center;
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.nav-links a:hover{
+  transform: scale(1.1); 
+  font-size: larger;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #c69c6d;
+  border: none;
+  padding: 3px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+   font-family: "Playfair Display";
+   font-weight: bold;
+   margin-top: 20px;
+}
+.btn:hover {
+  background-color: #a97c50;
+}
+.btn1{
+  border-radius: 90px;
+  
+}
+
+/* Hero */
+.hero h1 {
+  font-size: 220px;
+  font-family: "Clicker Script";
+  font-weight: 100;
+}
+.hero{
+  text-align:left; 
+}
+.hero h3{
+ font-family: "Playfair Display"; 
+ font-size: 22px;
+ font-weight: 100;
+}
+.hero p {
+margin-bottom: 22px;
+font-size:large;
+ font-family: "Playfair Display";
+}
+
+/* Discover */
+.discover {
+  text-align: left;
+  padding: 80px 20%;
+   display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #4b2c20;
+}
+.mug1 img {
+  width: 200px;
+  max-height: 100%;
+  margin: 10px 0;
+  text-align: left;
+ 
+}
+.discover h2,p{
+  font-family: "Playfair Display";
+}
+.discover h2{
+  font-size: 50px;
+}
+/* Coffee Styles */
+.coffee-style {
+  text-align: center;
+  padding: 80px 20%;
+  background-color: #3d0505;
+}
+ .coffee-style h2,p,h3,span{
+   font-family: "Playfair Display";
+ }
+ .coffee-style  h2{
+  font-size: 54px;
+ }
+ .coffee-style p{
+  color:#d7bfa4;
+  
+ }
+ .coffe{
+ margin-top: 80px;
+ }
+ .features h2{
+    font-size: 54px;
+    font-family: "Playfair Display";
+ }
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.card {
+  background: #543914;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(223, 214, 114, 0.1);
+  padding: 20px;
+  display: inline-block;
+  transition: transform 0.5s ease, box-shadow 0.25s ease;
+   font-family: "Playfair Display";
+
+}
+.card:hover{
+  transform: scale(0.9 );
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Features */
+.features {
+  text-align: center;
+  padding: 80px 10%;
+}
+.features img{
+  align-items: "center";
+  padding: 4px 72px;
+}
+.features  h3{
+  font-weight: 200;
+  color:#d7bfa4;
+  padding: 7px 0px;
+}
+.features span{
+   font-size: 40px;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+.feature-item {
+  background-color: #b39261;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Feedback */
+.feedback {
+  text-align: left;
+  height: 560px;
+  padding: 70px 10%;
+  display: flex;
+  justify-content: space-between;
+  background: url('image/Group 46.png') center center / cover no-repeat; /* 👈 fixed shortcut */
+  color: #fff; /* optional, যদি background dark হয় */
+}
+.container{
+  max-width: 50%;
+}
+.feedback span {
+  font-family: "Playfair Display";
+  margin-bottom: 20px;
+}
+.feedback h2{
+font-family: "Playfair Display";
+font-size: 50px;
+}
+.mug img{
+  height: 500px;
+  background: url('image/coffee_bean.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;  
+}
+
+
+/* ===== Subscribe Section ===== */
+.subscribe {
+  position: relative;
+  text-align: center;
+  padding: 100px 10%;
+  font-family: 'Playfair Display';
+  background: url('image/Group 46.png') center/cover no-repeat; /* fills area */
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Headings */
+.subscribe h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.subscribe p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+
+/* ===== Coffee Cup Images ===== */
+.cup {
+  position: fixed; /* 👈 Fixed — zoom করলেও নড়বে না */
+  bottom: 0;
+  width: 250px;
+  z-index: 5;
+  transition: transform 0.3s ease;
+}
+
+/* Optional hover zoom */
+.cup:hover {
+  transform: scale(1.05);
+}
+
+/* Left cup */
+.cup.left {
+  left: 0px;
+}
+
+/* Right cup */
+.cup.right {
+  right: 0px;
+}
+
+.btn2{
+  margin-top: 2px;
+}
+
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.subscribe-box input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #c69c6d;
+  border-radius: 5px 0 0 5px;
+}
+.subscribe-box button {
+  border-radius: 0 5px 5px 0;
+}
+/*contact*/
+ .contact-section {
+    background: #3e2723; /* Dark coffee brown */
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .container { max-width: 700px; margin: 0 auto; }
+  h2 { font-size: 2.5rem; margin-bottom: 10px; color: #d7ccc8; }
+  .subtitle { font-size: 1.1rem; margin-bottom: 40px; opacity: 0.9; }
+  .form-group { margin-bottom: 25px; text-align: left; }
+  label { display: block; margin-bottom: 8px; font-weight: bold; color: #d7ccc8; }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #6d4c41;
+    border-radius: 6px;
+    background: #4e342e;
+    color: #fff;
+    font-size: 1rem;
+  }
+  input:focus, textarea:focus { outline: none; border-color: #a1887f; }
+  .submit-btn {
+    background: #795548;
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .submit-btn:hover { background: #8d6e63; transform: translateY(-3px); }
+  .status-message { margin-top: 20px; font-weight: bold; }
+
+
+
+/* Footer */
+.footer {
+  background-color: #4b2c20;
+  background: url('image/fotter_image.png');
+  color: rgb(253, 253, 253);
+  padding: 0px 12%;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top:100px;
+}
+.footer a {
+  color: #d7bfa4;
+  text-decoration: none;
+}
+.footer h4{
+ font-size: 30px;
+  font-family: "Clicker Script";
+  }
+.footer a:hover {
+  color: #fff;
+}
+.footer ul {
+  list-style: none;
+}
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.8rem;
+}
+/*about*/
+.about h2 {
+  font-family: "Clicker Script";
+ }
+  .star{
+    padding: 0px 160px;
+  }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  body{
+    font-size: 30px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #4b2c20;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  .discover{
+    font-size: small;
+  }
+  .discover h2{
+    font-size: large;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #fff;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }                
+   .cup {
+    width: 150px;
+  }
+  .feedback{
+     flex-direction: column;
+    max-width: 100%;
+    background: #4b2c20;
+  }
+  .feedback h2{
+    font-size: 15px; 
+  }
+  .feedback span{
+    font-size: 20px;
+  }
+  
+  .subscribe {
+    padding: 60px 5%;
+  }
+  .subscribe h2 {
+    font-size: 28px;
+  }
+ .mug{
+  height: 10px;
+ }
+  .footer{
+    background-color: #543914;
+    background: none;
+  }
+  .footer-content {
+    text-align: center;
+  }
+}

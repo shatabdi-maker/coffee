@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bean Scene | Coffee Shop</title>
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--css-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body >
+
+
+  <!-- ===== HEADER ===== -->
+  <header class="headers bg-yellow-900">
+    <nav class="navbar">
+      <div class="logo"> <img src="image/Bean Scene.png"></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <a href="#" class="btn"> Email </a>
+     </nav>
+   </header>
+<section>
+  <div class=" text-center bg-yellow-500 ">
+    <h1 class=" font-size"> Contact us</h1>
+      <p class="text-gray-500 mt-2">We’d love to hear from you</p>
+  </div>
+</section>
+
+
+
+
+ <section class="subscribe">
+  <h2>Subscribe to get the Latest News</h2>
+  <p>Don’t miss out on our latest news, updates, tips and special offers.</p>
+
+  <div class="subscribe-box">
+    <input type="email" placeholder="Enter your email" />
+    <button class="btn btn2">Subscribe</button>
+  </div>
+
+  <!-- Left Cup -->
+  <img src="image/pngwing 1.png" class="cup left" alt="Left cup">
+  <!-- Right Cup -->
+  <img src="image/pngwing 2.png" class="cup right" alt="Right cup">
+</section>
+   <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h4> Bean Scene</h4>
+        <p>Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and mood.</p>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Blogs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p>Shatabdee  1st Block, Bangladesh</p>
+        <p>+0123........</p>
+        <p>shatabdee@email.com</p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Bean Scene | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Simple subscribe alert
+document.addEventListener("DOMContentLoaded", () => {
+  const subscribeBtn = document.querySelector(".subscribe-box button");
+  subscribeBtn.addEventListener("click", () => {
+    const email = document.querySelector(".subscribe-box input").value;
+    if (email) {
+      alert(`Thank you for subscribing, ${email}!`);
+    } else {
+      alert("Please enter a valid email address.");
+    }
+    })
+});
+</script>
+   </body>
+   </html>   
